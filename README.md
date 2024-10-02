@@ -53,8 +53,14 @@ usernames_to_follow = ["username1", "username2", "username3"]
 
 ### 5. Run the script
 Once everything is set up, you can run the script:
+
+*To Follow*
 ```bash
-python run.py
+python follow.py
+```
+*To Unfollow*
+```bash
+python unfollow.py
 ```
 
 The script will first unfollow all users you're following and then proceed to follow the specified users. It handles rate limits by pausing and resuming automatically when needed.
