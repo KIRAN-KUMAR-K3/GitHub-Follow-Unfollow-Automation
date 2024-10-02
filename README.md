@@ -1,12 +1,13 @@
 
-# GitHub-Unfollower
+# GitHub-Follow-Unfollow-Automation
 
-GitHub-Unfollower is a Python script that automatically unfollows all users you're following on GitHub. It uses the GitHub API to streamline the process with built-in rate limit handling.
+GitHub-Follow-Unfollow-Automation is a Python script that allows users to automatically follow and unfollow users on GitHub. It utilizes the GitHub API to streamline both processes while effectively managing API rate limits.
 
 ## Features
-- Unfollows all users you're currently following on GitHub.
-- Automatically manages GitHub API rate limits to avoid interruptions.
-- Simple and easy to use with minimal setup.
+- **Unfollow**: Unfollows all users you're currently following on GitHub.
+- **Follow**: Follows a list of specified users on GitHub.
+- **Rate Limit Management**: Automatically handles GitHub API rate limits to avoid interruptions.
+- **Simple Setup**: Easy to use with minimal configuration.
 
 ## Requirements
 - Python 3.x
@@ -17,7 +18,7 @@ GitHub-Unfollower is a Python script that automatically unfollows all users you'
 ### 1. Clone the repository
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/YOUR_USERNAME/GitHub-Unfollower.git
+git clone https://github.com/YOUR_USERNAME/GitHub-Follow-Unfollow-Automation.git
 ```
 
 ### 2. Install dependencies
@@ -44,22 +45,29 @@ In the `run.py` file, replace the placeholder `TOKEN` with your personal access 
 TOKEN = "your_personal_access_token_here"
 ```
 
+Additionally, you can specify the list of users you want to follow in the script:
+```python
+# List of usernames to follow
+usernames_to_follow = ["username1", "username2", "username3"]
+```
+
 ### 5. Run the script
-Once everything is set up, run the script:
+Once everything is set up, you can run the script:
 ```bash
 python run.py
 ```
 
-The script will fetch the list of users you follow and unfollow them one by one. It handles rate limits by pausing and resuming automatically when needed.
+The script will first unfollow all users you're following and then proceed to follow the specified users. It handles rate limits by pausing and resuming automatically when needed.
 
 ## Example Output
 ```bash
 Successfully unfollowed username1
 Successfully unfollowed username2
+Successfully followed username3
 ...
 Rate limit exceeded, waiting for 15 minutes.
 ...
-Successfully unfollowed username3
+Successfully followed username4
 ```
 
 ## Contribution
