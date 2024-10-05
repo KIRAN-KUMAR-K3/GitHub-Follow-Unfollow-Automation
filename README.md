@@ -1,4 +1,3 @@
-
 # 🚀 GitHub Follow/Unfollow Automation
 
 **GitHub-Follow-Unfollow-Automation** is a Python script that simplifies the process of following and unfollowing users on GitHub. With this tool, you can easily manage your followers list, leveraging the GitHub API for bulk actions while keeping API rate limits in check.
