@@ -40,7 +40,7 @@ pip install requests
 
 ### 3. Generate Your GitHub Personal Access Token (PAT)
 
-- Go to **GitHub Settings** > **Developer Settings** > **Personal Access Tokens**.
+- Go to **[GitHub settings](https://github.com/settings/tokens).** > **Developer Settings** > **Personal Access Tokens**.
 - Generate a new token with **Fine-grained access** and give it the necessary permissions (like repository access and follower management).
 
 ### 4. Configure the Script
